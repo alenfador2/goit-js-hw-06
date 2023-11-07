@@ -22,7 +22,6 @@ function getRandomHexColor() {
 }
 }
 function destroyBoxes() {
-  // colection.reset();
   colection.innerHTML = "";
 }
 

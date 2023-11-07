@@ -14,7 +14,6 @@ const images = [
 ];
 const gallery = document.querySelector('.gallery');
 const markup = images.map((image) => `<li><img src = ${image.url} alt = ${image.alt} /></li>`).join("");
-// console.log(markup);
 gallery.insertAdjacentHTML('afterbegin', markup);
 const imagesArray = document.querySelectorAll('img');
 imagesArray.forEach((image) => {
