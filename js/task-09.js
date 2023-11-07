@@ -10,6 +10,7 @@ function bodyColor(event) {
       .toString(16)
       .padStart(6, 0)}`;
   }
-  body.style.backgroundColor = getRandomHexColor();
-  colorNum.textContent = `${getRandomHexColor()}`;
+  const generatedColor = getRandomHexColor();
+  body.style.backgroundColor = generatedColor;
+  colorNum.textContent = `${generatedColor}`;
 }

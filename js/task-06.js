@@ -6,10 +6,12 @@ userInput.addEventListener("blur", (event) => {
     const requiredValue = userInput.dataset.length;
     if ( eventValue >= requiredValue) {
         // userInput.style.borderColor = "#4caf50";
-        userInput.classList.toggle('valid');
+        userInput.classList.add('valid');
+        userInput.classList.remove('invalid');
     }
     else {
-        userInput.classList.toggle('invalid');
+        userInput.classList.add('invalid');
+        userInput.classList.remove('valid');
         // userInput.style.borderColor = "#f44336";
     }
 })

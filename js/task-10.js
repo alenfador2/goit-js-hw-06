@@ -7,7 +7,7 @@ destroyButton.addEventListener('click', destroyBoxes);
 
 function createBoxes() {
   const amount = userInput.value;
-  for (let i = 0; i <= amount; i++){
+  for (let i = 1; i <= amount; i++){
     const newElement = document.createElement('div');
     colection.append(newElement);
     newElement.style.backgroundColor = getRandomHexColor();
